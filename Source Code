@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+#include <math.h>
+using namespace std;
+int main() {
+cout<< "Welcome to Vinil's quadratic equations root calculator.\n"; 
+cout<< "\nEnter coefficient of x^2 \n";
+double x,y,z;
+cin>> x;
+cout<<"Enter coeeficient of x. \n";
+cin>> y;
+cout<<"Enter constant term.\n" ;
+cin >>z;
+double d = pow (y,2);
+double m = d-4*x*z;
+if (m <0)
+cout<< "No real roots possible."; 
+double j = pow(m,0.5);
+double root1 = ((-y+j)/2*x);
+double root2 = ((-y-j)/2*x);
+cout << "\nThe roots are"<<" "<<root1<<" "<<"and"<<" "<<root2<<".";
+ return 0;
+}
+
